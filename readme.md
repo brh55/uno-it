@@ -30,7 +30,7 @@ unoIt('90.17 kg 1 lb 100 g', 'kg');
 ## Possible Measurements
 As long as the base of the measurements are defined, it will be evaluated properly.
 
-`IE: ins == in`
+`IE: "ins" == "in", "mg" == "mgs"`
 
 - **mass:** mcg, mg, g, kg, oz, lb
 - **volume:** ml, l, tsp, tbsp, fl-oz, cup, pnt, qt, gal
@@ -44,7 +44,9 @@ As long as the base of the measurements are defined, it will be evaluated proper
 
 Type: [`<string>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
-The string containing multiple units of the same type. `IE: "1 cup 10 qt 9 pnt 2 gal"
+The string containing multiple units of the same type. 
+
+`IE: "1 cup 10 qt 9 pnt 2 gal"`
 
 #### desiredUnit
 
@@ -52,9 +54,9 @@ Type: [`<string>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_
 
 The desired unit to convert the string to.
 
-### options
+#### options
 
-#### round
+##### round
 
 Type: [`<boolean>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)<br>
 Default: `2`
