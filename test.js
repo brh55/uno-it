@@ -35,4 +35,4 @@ test('Test errors', t => {
 		fn('91 lbs 4 kg', 'hello world');
 	}, Error, 'Non-relevant string');
 	t.is(error.message, 'Expected units to be of either: volume, mass, or length. Instead got hello world');
-})
+});

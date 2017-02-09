@@ -27,7 +27,7 @@ module.exports = (input, desiredUnit, opts) => {
 	}
 	const unitRegEx = new RegExp(groupPattern);
 	const valuePattern = '[-+]?[0-9]*\\.?[0-9]+';
-	const valueRegEx  = new RegExp(valuePattern);
+	const valueRegEx = new RegExp(valuePattern);
 	const inputRegEx = new RegExp(`((${valuePattern})\\s?(${groupPattern}))`, 'g');
 
 	const inputs = input.match(inputRegEx);
