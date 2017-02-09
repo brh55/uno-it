@@ -31,7 +31,6 @@ module.exports = (input, desiredUnit, opts) => {
 	const inputRegEx = new RegExp(`((${valuePattern})\\s?(${groupPattern}))`, 'g');
 
 	const inputs = input.match(inputRegEx);
-
 	if (!inputs) {
 		throw new Error('Expecting string to contain measurements');
 	}
